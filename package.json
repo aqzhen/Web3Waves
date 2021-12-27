@@ -1,7 +1,10 @@
 {
-  "name": "ReplitReactjsProject",
+  "name": "ReactGithubPages",
+  "homepage": "http://aqzhen.github.io/Web3Waves",
   "version": "0.0.1",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview"
@@ -10,9 +13,12 @@
     "@types/react": "^17.0.13",
     "@types/react-dom": "^17.0.8",
     "@vitejs/plugin-react-refresh": "^1.3.0",
+    "ethers": "^5.4.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "vite": "^2.3.8",
-    "ethers": "^5.4.4"
+    "vite": "^2.3.8"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
